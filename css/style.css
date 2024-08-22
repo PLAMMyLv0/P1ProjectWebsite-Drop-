@@ -1,0 +1,64 @@
+html, body {
+    background-image: url(../Image/BGCapybara.jpg);
+    background-size: cover;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+    position: relative;
+    min-height: 100%;   
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* ให้ content ขยายเต็มพื้นที่ที่เหลืออยู่ */
+}
+
+footer {
+    background-color: #836953;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    /* Removes the underline from links */
+}
+
+.outlined-text {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
+}
+
+.main-content{
+    margin: 20px;
+    width: 50%;
+}
+
+.box{
+
+    margin: 30px;
+    padding: 20px;
+    width: auto;
+    background-color: #836953;
+    display: flex;
+}
+
+.side-box{
+    margin-left: auto;
+    margin-right: 5px;
+    padding:  20px;
+    width: auto;
+    background-color: none;
+}
+
+.image{
+    width: 100%;
+}
