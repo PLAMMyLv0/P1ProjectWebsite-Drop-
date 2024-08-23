@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TryLoveAnimal Cafe - Home</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon"href="../Image/CapybaraICON.png"type="image/x-icon"/>
+  <link rel="stylesheet" href="../css/Style.css">
+  <link rel="stylesheet" href="../css/Slider.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,29 +25,30 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./Home.html" style="color: white;"><b>Home</b></a>
+            <a class="nav-link" aria-current="page" href="./Home.html" style="color: white;"><b>Home</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./AboutUs.html" style="color: white;">About Us</a>
+            <a class="nav-link active" href="./AboutUs.html" style="color: white;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Gallery.html" style="color: white;">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Menu.html" style="color: white;">Menu</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="./Reservations.html" style="color: white;">Reservations</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color: white;" >
+              About Order
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="color: white;">  
           <li class="nav-item">
-            <a class="nav-link" href="./Events&Actives.html" style="color: white;">Events & Activities</a>
+            <a class="dropdown-item" href="./OnlineShop.html" style="color: #836953;">Online Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./OnlineShop.html" style="color: white;">Online Shop</a>
+            <a class="dropdown-item" href="./Menu.html" style="color: #836953;">Menu</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./ContactUs.html" style="color: white;">Contact Us</a>
-          </li>
+        </ul>
+      </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,6 +61,25 @@
 
   <!-- Main Content -->
   <div class="container text-center text-black mt-5" style="margin-bottom: auto; background-color: #836953; padding-bottom: 50px; padding-top: 50px;border: 0; border-radius: 50px;">
+    <!-- <div class="slider">
+      <div class="slides">
+        <div class="slide" style="width: auto; height: 350px;">
+          <img src="../Image/CapybaraCafe.png" alt="Slide 1">
+        </div>
+        <div class="slide" style="width: auto; height: 350px;">
+          <img src="../Image/CapybaraCafe2.png" alt="Slide 2">
+        </div>
+        <div class="slide" style="width: auto; height: 350px;">
+          <img src="../Image/CapybaraCafe3.png" alt="Slide 3">
+        </div>
+        <div class="slide" style="width: auto; height: 350px;">
+          <img src="../Image/CapybaraCafe4.png" alt="Slide 4">
+        </div>
+        <div class="slide" style="width: auto; height: 350px;">
+          <img src="../Image/CapybaraCafe5.png" alt="Slide 5">
+        </div>
+      </div>
+    </div> -->
     <h1 style="color: white">Welcome to TryLoveAnimal Cafe</h1>
     <p class="lead" style="color: white">A cozy spot where you and your pets can enjoy delightful moments together.</p>
     <p style="color: white">Explore our delicious menu of drinks and treats, all crafted with love.</p>
@@ -66,7 +88,7 @@
   <!-- /Main Content -->
 
   <!-- Footer -->
-  <footer style="background-color: #836953; color: white; padding: 20px 0; text-align: center;">
+  <footer style="background-color: #836953; color: white; padding: 20px 0; text-align: center; margin-top: 50px;">
     <div class="container">
       <p style="font-size: 18px; margin-bottom: 10px;">
         Thank you for visiting TryLoveAnimal Cafe – a place where warmth and love for pets come together.

@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TryLoveAnimal Cafe - Online Shop</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon"href="../Image/CapybaraICON.png"type="image/x-icon"/>
+  <link rel="stylesheet" href="../css/Style.css">
+  <link rel="stylesheet" href="../css/ShowPopup.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -26,25 +28,26 @@
             <a class="nav-link" aria-current="page" href="./Home.html" style="color: white;"><b>Home</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./AboutUs.html" style="color: white;">About Us</a>
+            <a class="nav-link active" href="./AboutUs.html" style="color: white;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Gallery.html" style="color: white;">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Menu.html" style="color: white;">Menu</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="./Reservations.html" style="color: white;">Reservations</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Events&Actives.html" style="color: white;">Events & Activities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./OnlineShop.html" style="color: white;">Online Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./ContactUs.html" style="color: white;">Contact Us</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              About Order
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="color: white;">  
+              <li class="nav-item">
+                <a class="dropdown-item" href="./OnlineShop.html" style="color: #836953;">Online Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="./Menu.html" style="color: #836953;">Menu</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <form class="d-flex">
@@ -57,16 +60,18 @@
   <!-- /Navbar -->
 
   <!-- Online Shop Content -->
-  <div class="container mt-5 content">
+  <div class="container mt-5 content ">
+    <div class="container text-center text-black mt-5" style="margin-bottom: auto; background-color: #836953; padding-bottom: 20px; padding-top: 50px;border: 0; border-radius: 50px; color: white;">
     <h1 class="text-center">Online Shop</h1>
-    <div class="row">
+  </div>
+    <div class="row"style="margin-top: 20px;">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <img src="../Image/CapybaraToy.png" class="card-img-top" alt="Product 1">
           <div class="card-body">
             <h5 class="card-title">Capybara Toy</h5>
             <p class="card-text">699 ฿</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <button class="btn btn-primary" onclick="showPopup('Capybara Toy', '699 ฿', '../Image/CapybaraToy.png')">View Details</button>
           </div>
         </div>
       </div>
@@ -76,7 +81,7 @@
           <div class="card-body">
             <h5 class="card-title">Pet Outfit</h5>
             <p class="card-text">249 ฿</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <button class="btn btn-primary" onclick="showPopup('Pet Outfit', '249 ฿', '../Image/CapybaraOutfit.png')">View Details</button>
           </div>
         </div>
       </div>
@@ -86,14 +91,24 @@
           <div class="card-body">
             <h5 class="card-title">Coffee</h5>
             <p class="card-text">169 ฿</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <button class="btn btn-primary" onclick="showPopup('Coffee', '169 ฿', '../Image/Coffee.png')">View Details</button>
           </div>
         </div>
       </div>
-      <!-- เพิ่มสินค้าตามที่คุณต้องการ -->
     </div>
   </div>
   <!-- /Online Shop Content -->
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup()">&times;</span>
+      <img id="popup-image" src="" class="img-fluid" alt="Product Image">
+      <h5 id="popup-title"></h5>
+      <p id="popup-price"></p>
+    </div>
+  </div>
+  <!-- /Popup -->
 
   <!-- Footer -->
   <footer style="background-color: #836953; color: white; padding: 20px 0; text-align: center; margin-top: 50px;">
@@ -120,6 +135,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  <!-- ShowPopup JS -->
+  <script src="../js/ShowPopup.js"></script>
 </body>
 </html>
